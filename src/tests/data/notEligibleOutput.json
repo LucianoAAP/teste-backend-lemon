@@ -1,0 +1,7 @@
+{
+  "elegivel": false,
+	"razoesInelegibilidade": [
+    "Classe de consumo não aceita",
+    "Modalidade tarifária não aceita"
+  ]
+}

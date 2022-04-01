@@ -1,3 +1,3 @@
-const eligible = require('./data/eligible.json');
+const eligible = require('../data/eligibleInput.json');
 
 module.exports = JSON.parse(JSON.stringify(eligible));
