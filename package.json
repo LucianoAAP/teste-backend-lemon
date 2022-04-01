@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node .",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./src/tests/**/*$NAME*.{test,spec}.js --exit",
+    "test:coverage": "nyc --all npm run test"
   },
   "keywords": [],
   "author": "Luciano Almeida Andrade Pereira",
@@ -16,6 +17,7 @@
     "eslint": "^8.12.0",
     "eslint-config-trybe-backend": "^1.0.4",
     "eslint-plugin-sonarjs": "^0.13.0",
-    "mocha": "^9.2.2"
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0"
   }
 }
