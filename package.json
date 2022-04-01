@@ -1,0 +1,19 @@
+{
+  "name": "teste-backend-lemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Luciano Almeida Andrade Pereira",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-trybe-backend": "^1.0.4",
+    "eslint-plugin-sonarjs": "^0.13.0"
+  }
+}
