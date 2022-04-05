@@ -14,7 +14,7 @@ const getConsumption = (history) => {
     return { averageConsumption, economiaAnualDeCO2 };
 };
 
-const getEligibility = (client) => {
+const createEligibilityReport = (client) => {
   const { tipoDeConexao, classeDeConsumo, modalidadeTarifaria, historicoDeConsumo } = client;
 
   const eligibleConsumingClasses = ['comercial', 'residencial', 'industrial'];
@@ -42,4 +42,4 @@ const getEligibility = (client) => {
   return { elegivel, economiaAnualDeCO2 };
 };
 
-module.exports = getEligibility;
+module.exports = { createEligibilityReport };
