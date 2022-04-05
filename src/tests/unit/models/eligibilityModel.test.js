@@ -5,7 +5,7 @@ const eligibleClientReport = require('../../data/eligibleOutput.json');
 const notEligibleClientReport = require('../../data/notEligibleOutput.json');
 const { createEligibilityReport } = require('../../../models/EligibilityModel');
 
-describe('Testa função de eligibilidade', () => {
+describe('Testa model de eligibilidade', () => {
   it('Testa com cliente não elegível', () => {
     const expectedReport = JSON.parse(JSON.stringify(notEligibleClientReport));
     const report = createEligibilityReport(notEligibleClient);
