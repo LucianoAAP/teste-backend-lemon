@@ -25,6 +25,7 @@
     "sinon": "^13.0.1"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-rescue": "^1.1.31",
     "http-status-codes": "^2.2.0",
