@@ -1,9 +1,5 @@
 const getConsumption = (history) => {
-  const validConsumptions = history.length > 12
-    ? history.filter((_consumption, index) => index < 12)
-    : history;
-
-    const totalConsumption = validConsumptions.reduce((accumulator, current) => (
+  const totalConsumption = history.reduce((accumulator, current) => (
       accumulator + current
     ));
 
